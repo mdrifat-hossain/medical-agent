@@ -167,21 +167,3 @@ What's the average HbA1c level in the diabetes dataset, and what does a high HbA
 
 ---
 
-## 📓 Google Colab
-
-To run in Colab instead of locally, note that Colab can't reach your local
-Ollama instance directly — either:
-- run `ollama serve` via a Colab terminal add-on / ngrok tunnel, or
-- swap `ChatOllama` for a hosted free-tier model (e.g. Groq, Gemini free
-  tier) in `agent.py` and `tools/db_tool.py`.
-
----
-
-## ✅ Requirements Checklist
-
-- [x] CSV → SQLite conversion with typed columns (`build_databases.py`)
-- [x] `heart_disease.db`, `cancer.db`, `diabetes.db` with meaningful table names
-- [x] `HeartDiseaseDBTool`, `CancerDBTool`, `DiabetesDBTool` — NL question → SQL → NL answer
-- [x] `MedicalWebSearchTool` — free web search for general medical knowledge
-- [x] Main agent with automatic routing (stats → DB tool, knowledge → web tool)
-- [x] README with run instructions
