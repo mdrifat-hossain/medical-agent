@@ -1,0 +1,11 @@
+# Pinned to the 0.3.x line: langchain 1.x restructured the agents API and
+# no longer has create_tool_calling_agent in the same place. These exact
+# versions are tested and confirmed working together.
+langchain==0.3.27
+langchain-core==0.3.72
+langchain-community==0.3.27
+langchain-ollama==0.3.6
+pandas>=2.0.0
+python-dotenv>=1.0.0
+ddgs>=1.0.0
+numpy>=1.26.0
